@@ -161,3 +161,7 @@ But, the interesting thing here is they both are kind of at odds with each other
 
 > The big question is doing it manually ( you and I) vs letting TypeScript do the guessing.
 
+### Understanding Type annotations
+
+> Code snippet examples `02_ts_features/01_variables.ts`
+
