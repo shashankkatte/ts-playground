@@ -163,5 +163,5 @@ But, the interesting thing here is they both are kind of at odds with each other
 
 ### Understanding Type annotations
 
-> Code snippet examples `02_ts_features/01_variables.ts`
+We annotate the type of a variable using `:` followed by the type name. Refer to the code snippets and exaples  at `02_ts_features/01_variables.ts`
 
