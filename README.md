@@ -58,3 +58,27 @@ This compilation gets tedious pretty soon, w can save one step by using ts node
 `ts-node <filename.ts>`
 
 This command compiles the TS files to JS files and executes the JS file, all in one command.
+
+## Interfaces and annotations in Typescript
+
+Interfaces in Typescript help define structure of objects in Typescript. It helps us to catch type errors early while developing code
+
+Annotations let us assign the data type to function arguments. This is a life saver in situations where we tend to mix up order of arguments while calling functions. 
+
+Here is an example of interfaces and type annotations:
+
+```javascript
+interface Todo {
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
+const logTodo = (id: number, title: string, completed: boolean) => {
+  console.log(`
+    The Todo with ID : ${id}
+     Has a title of: ${title}
+     Is it finished? ${completed}
+    `);
+};
+```
