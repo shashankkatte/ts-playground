@@ -59,11 +59,13 @@ This compilation gets tedious pretty soon, w can save one step by using ts node
 
 This command compiles the TS files to JS files and executes the JS file, all in one command.
 
-## Interfaces and annotations in Typescript
+## A quick look at How Typescript helps with Interfaces and Annotations
+
+> refer to source code at `01_fetchjson/index.ts`
 
 Interfaces in Typescript help define structure of objects in Typescript. It helps us to catch type errors early while developing code
 
-Annotations let us assign the data type to function arguments. This is a life saver in situations where we tend to mix up order of arguments while calling functions. 
+Annotations let us assign the data type to function arguments. This is a life saver in situations where we tend to mix up order of arguments while calling functions.
 
 Here is an example of interfaces and type annotations:
 
@@ -82,3 +84,55 @@ const logTodo = (id: number, title: string, completed: boolean) => {
     `);
 };
 ```
+
+> Refer to `01_fetchjson/index.ts` for a complete working exercise.
+
+Great now that we have ataste of Typescript lets dig deeper from the basics.
+
+## Types in TypeScript
+
+In simple terms, Type in Typescript is an easy way to refer to the different properties and functions that a value has
+
+A value is anything that we can assign to a variables like strings, numbers, booleans, arrays, undefined etc.
+
+Here's a example:
+
+If we imagine a variable as a bucket and it has a string inside it say "blue". How would you answer the question - Whats in the bucket?
+
+Either you'd say
+
+* Its a string
+
+* OR we can say - It is a value that has all the properties and methods that we assume that a string has.
+
+So instead, as a short cut so humans undertand. We just say... **It's a string**.
+
+Sometimes these types are pretty obvious like strings, but in real world of programming we come across situations where its not so obvious. In a previous example we saw that we defined Todo as an interface type.
+
+So Type in Typescript is nothing but a short cut, a label or nomenclature of sorts to help us describe what kind of value it is and what can it do.
+
+> Every single value in Typescript ha sa type
+
+### Some basic Types in typeScript
+
+* **string** - "hi there"
+
+* **number** - 0.2 0r -20 or 40000
+
+* **boolean** - true false
+
+* **Date** - new Date()
+
+* **custom type** - employee {id:1, name:"john", title:"developer"}
+
+### Categories of types
+
+1. **Primitive types** - Primitive types are all the basic ones that you might guess eg: number, boolean, void, undefined, string, symbol, null.
+
+2. **Object types** - These are any types that you and I create or any other non-primitive types that are built into the language. E.g: functions, arrays, classes, objects.
+
+### Why do we care about Types at all?
+
+1. Types are used by the Typescript Compiler to analyse our code for errors. Remember? like that good friend to help find errors while develping.
+
+2. Types allow other developers to understand what values are flowing around in the codebase. It makes your code more readable, maintainable and collaboration is easy.
