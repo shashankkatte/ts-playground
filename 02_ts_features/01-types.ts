@@ -20,6 +20,7 @@ class Color {}
 
 //  lets create an object from this class
 const red = new Color();
-//  now if you hover over red it instantly shows you that red is of type color. So red has access to all the properties and methods that type color has
-//  now if you try to use them with a red and . we wont get any autosuggetion as the class is empty it has no properties or methods associated for type color. How ever if you do go ahead trying to attach a method it will yell at you proptly with a swiggy line
+ /* now if you hover over red it instantly shows you that red is of type color. So red has access to all the properties and methods that type color has */
+
+ /* now if you try to use them with a red and . we wont get any autosuggetion as the class is empty it has no properties or methods associated for type color. How ever if you do go ahead trying to attach a method it will yell at you proptly with a swiggy line */
 red.someWierdMethod();

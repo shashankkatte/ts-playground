@@ -159,9 +159,69 @@ So you'll see that both refer to finding type of variable.
 
 But, the interesting thing here is they both are kind of at odds with each other. With the former (Type annotation) we are adding some code to tell Typescript what type a variable is and with latter(type inference) we let Typescript do the guess work on what type a variable is.
 
-> The big question is doing it manually ( you and I) vs letting TypeScript do the guessing.
+> The big question is doing it manually ( you and I) vs letting TypeScript do the guessing.First lets understand annotations in next section
 
 ### Understanding Type annotations
 
-We annotate the type of a variable using `:` followed by the type name. Refer to the code snippets and exaples  at `02_ts_features/01_variables.ts`
+We annotate the type of a variable using `:` followed by the type name.
 
+Let's look at annotation for basic and object types. Refer to the code snippets and examples  at `02_ts_features/01_variables.ts`
+
+But do we need to annotateevery variable? Read on to Type Inference to find out...
+
+### Understanding Inference
+
+Everytime we make a variable inside our code:
+
+```javascript
+const color = 'red';
+```
+
+we are essentially doing 2 steps
+
+1. Here the left hand side of `=` is the Variable declaration
+
+2. right hand side is the variable initialization.
+
+> If we do our declaration and initialization on the same line, Typescript will figure out the type for us.
+
+So in this example even though we do not annotate color like `color: string` Typescript gets that color is of type string.
+
+To make this even clear if we do the same in two lines, Type script cant figure out anymore
+
+```javascript
+const color;
+color = 'red';
+```
+
+If you hover over color after initialization it would say type as `any`. (We will look at any shortly)
+
+> Rule of thumb: if we do the declarationa nd initialization in the same line Typescript will do the TYpe inference for us.
+
+### So then when should we use what?
+
+* **Type Inference** : ALWAYS! When ever we can we use type infrerence by default. We will let Typescript figure out the type for us as much as possible
+
+* **Type Annotations** - There are 3 Scenarios where we might have to add annotations to help Typescript find the type
+
+  1. Whenever a function returns a `any` type and we need to clarify the value
+
+  2. When we declare a variable on one line but initialize on another
+
+  3. When we want the variable to have a type that can't be inferred.
+
+> checkout examples on when to use typeannotations at the bottom section of `02_ts_features/01_variables.ts`
+
+## What the hell is `any` type?
+
+`any` type means that the Typescript absolutely has no idea what time a variable or value is! No clue at all!
+
+So `any` type is
+
+1. A type , just like `boolean` or `string`
+
+2. Means Typescript has no idea what this is and cant check for correct property references.
+
+> **Avoid Variables with `any` at all costs. Its generally a bad thing b'coz Typescript cant do its job of helping you**
+
+> checkout examples on when to use typeannotations at the bottom section of `02_ts_features/01_variables.ts`
