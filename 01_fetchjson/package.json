@@ -1,14 +1,14 @@
 {
   "name": "01_fetchjson",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple TS App to make an API request and printout JSON received",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Shashank Katte",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1"
   }
