@@ -136,3 +136,28 @@ So Type in Typescript is nothing but a short cut, a label or nomenclature of sor
 1. Types are used by the Typescript Compiler to analyse our code for errors. Remember? like that good friend to help find errors while develping.
 
 2. Types allow other developers to understand what values are flowing around in the codebase. It makes your code more readable, maintainable and collaboration is easy.
+
+### Code snippet examples on Types
+
+> Refer to `02_ts_features/01-types.ts` for some code snippet examples and inline explanations.
+
+### So where do we use types?
+
+***EVERYWHERE**, well thats the simple answer. You like it or not you will be surrounded by types. every value has a type associated with it.
+
+## Type Annotations and Type Inference
+
+In this section we will try to digest two different systems in Typescript, by looking at the in parallel so that we can grasp it better.
+
+### What is type Annotation and Type Inference?
+
+1. **Type Annotation** - Code we add to tell typescript what type of value a variable will refer to
+
+2. **Type Inference** - When typescript tries to figure out what type of value a variable refers to... on its own!
+
+So you'll see that both refer to finding type of variable.
+
+But, the interesting thing here is they both are kind of at odds with each other. With the former (Type annotation) we are adding some code to tell Typescript what type a variable is and with latter(type inference) we let Typescript do the guess work on what type a variable is.
+
+> The big question is doing it manually ( you and I) vs letting TypeScript do the guessing.
+
