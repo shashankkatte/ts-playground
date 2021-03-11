@@ -316,3 +316,37 @@ Time to head back into code and explore more `02_ts_features/05-arrays.ts`
 ### When to use Typed Arrays?
 
 We use typed arrays anytime we want to represent a collection of records with some arbitary sord order usually of the same type.
+
+## Tuples in TypeScript
+
+A tuple looks very similar to an Array. But the big difference is that in Tuple we have every element in this array looking thing represent one specific property about some record.
+
+While Array represents / organizes a buch or collection of different records, Tuple on the other hand, contains multiple different properties to describe one thing.
+
+> Usually inside tuple you mix and match many different types
+
+Lets look at an example:
+
+How would you represent coca-cola? the most famous beverage? we might say it has the following properties
+
+- color property which is a string 'brown'
+
+- Carbonated property which is a boolean - true
+
+- Sugar property in grams will be of type number - 40
+
+When coming from a JavaScript background representing a drink this way makes sense. We have one object to represent one drink.
+
+Now if we had to represent this object with an array how would we do that? it would look something like:
+
+`['brown', true, 40]`
+
+A different data structure that still looks like a drink. However we have lost quite a bit of information in this representation. With earlier representation we as developers could easily undertand that color is brown, carbonated is true and suger is 40.
+
+We have lost those property labels in the representation as an array. You will have to memorise what is what while developing. We have to remember the order of properties.
+
+So this `['brown', true, 40]` is what exactly a Tuple is. We have what looks like an array, and we put in property values into that array in a very specific order. So the **ordering part is very critical**.
+
+If we mess with the order, the structure becomes useless.
+
+> When we work with tuples we have a fix order of elements
