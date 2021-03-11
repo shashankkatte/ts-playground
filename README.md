@@ -6,7 +6,7 @@ A collection of TypeScript Apps, code snippets and exercises for anyone to under
 
 > TypeScript = JavaScript + A Type system
 
-We are adding some additional syntax to our JS code... or the type system. Think of it as flexibility of JavaScript with strict typse system as C# or Java.
+We are adding some additional syntax to our JS code... or the type system. Think of it as flexibility of JavaScript with strict type system as in C# or Java.
 
 TypeScript has no effect on how the code gets executed by browser or Node.
 
@@ -280,3 +280,20 @@ const logWeather = ({date, weather}: {date:Date, weather: string}): void => {
 ```
 
 Note here that the destructuring and the annotations are still seperate, seperated by the `:`
+
+### Annotating around Objects
+
+Annotating Objects is similar to destructuring argument list we saw in pervious section. 
+
+Lets head back into the code and play with it. `02_ts_features/objects.ts`
+
+## Arrays in TypeScript
+
+When working with Arrays in TypeScript, we are essentially working with plain JavaScript Arrays. You'll still have access to all the familiar Array behaviour as in JavaScript e.g push into an array, for loop etc. All the good stuff!
+
+> Typed Array = Arrays where each element is some consistant type of value
+
+In Typescript we generally have similar kind of values in an array. Like an array of strings, an array of numbers. We do not mix them as we could with plain JavaScript.
+
+_We can technically have different types in an array, we will look at it in a bit._ 
+
