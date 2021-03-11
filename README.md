@@ -350,3 +350,7 @@ So this `['brown', true, 40]` is what exactly a Tuple is. We have what looks lik
 If we mess with the order, the structure becomes useless.
 
 > When we work with tuples we have a fix order of elements
+
+### Tuples in action
+
+Head into code at `02_ts_features/06-tuples.ts`
