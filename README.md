@@ -283,7 +283,7 @@ Note here that the destructuring and the annotations are still seperate, seperat
 
 ### Annotating around Objects
 
-Annotating Objects is similar to destructuring argument list we saw in pervious section. 
+Annotating Objects is similar to destructuring argument list we saw in pervious section.
 
 Lets head back into the code and play with it. `02_ts_features/objects.ts`
 
@@ -295,7 +295,7 @@ When working with Arrays in TypeScript, we are essentially working with plain Ja
 
 In Typescript we generally have similar kind of values in an array. Like an array of strings, an array of numbers. We do not mix them as we could with plain JavaScript.
 
-_We can technically have different types in an array, we will look at it in a bit._ 
+_We can technically have different types in an array, we will look at it in a bit._
 
 Lets head back into code and explore more `02_ts_features/05-arrays.ts`
 
@@ -355,6 +355,31 @@ If we mess with the order, the structure becomes useless.
 
 Head into code at `02_ts_features/06-tuples.ts`
 
-### Why care about tuples?
+### Tuple why do we care and when to use them?
 
- 
+Sorry to break the news this late. We don't use tuples that often in real life and we will why why in a bit.
+
+Since tuple is included in the official TypeScript documentation you as a developer should at least have a passing idea about it.
+
+Most notably if you are working with a CSV file you might use it, but for most other scenarios you'll find better alternatives.
+
+So then why dont we use it that often? consider this tuple
+
+```Javascript
+const carSpecs:[number,number] = [450, 3456];
+```
+
+Now as a developer can you comprehend what this tuple means? what do the numbers mean?
+
+Lets create the same datastructure with an object
+
+```Javascript
+const carSpecs = {
+  horsepower: 450,
+  weight:3456
+}
+```
+
+Now doesnt this make better sense? the object format forces us to put in a key thus making the code more readable.
+
+> In real life you'll see that when ever we need to model some informative data we reach out to object more than tuple. Its all about making the code more readable and in turn making our lives easier.
