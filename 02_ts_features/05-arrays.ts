@@ -67,3 +67,5 @@ importantDates.push(new Date());
 
 //However if you try to push in a number it will cry foul!
 importantDates1.push(40);
+
+// Thats pretty much about Arrays. Lets head back to README.md

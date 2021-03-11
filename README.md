@@ -312,3 +312,7 @@ TypeScript can help us in different ways with typed Arrays
 4. Flexible arrays can still contain multiple different types.
 
 Time to head back into code and explore more `02_ts_features/05-arrays.ts`
+
+### When to use Typed Arrays?
+
+We use typed arrays anytime we want to represent a collection of records with some arbitary sord order usually of the same type.
