@@ -354,3 +354,7 @@ If we mess with the order, the structure becomes useless.
 ### Tuples in action
 
 Head into code at `02_ts_features/06-tuples.ts`
+
+### Why care about tuples?
+
+ 
