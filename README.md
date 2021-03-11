@@ -246,4 +246,4 @@ Here's whats going on with functions and Typescript
 
 > The big difference here is we are no longer annotating a variable declaration, instead we are annotating the function itself.
 
-I know this sends our brain on a spin. so lets jump back into code and undertsnad it better. ``
+I know this sends our brain on a spin. so lets jump back into code and undertsnad it better. `02_ts_features/03-functions.ts`
