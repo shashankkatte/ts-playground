@@ -226,3 +226,24 @@ So `any` type is
 
 > checkout examples on when to use typeannotations at the bottom section of `02_ts_features/01_variables.ts`
 
+## Functions - Type Annotation and Type Inference
+
+We got a glimpse of type annotation and functions when we discussed varaiables in `02_ts_features/01_variables.ts`.
+
+```javascript
+const logNumbers: (i: number) => void = (i) => {
+  console.log(i);
+};
+```
+
+However we looked at the annotation for the function variable, The left side of `=` sign. Now lets look at how we add annotations for the function itself the right side of `=` sign.
+
+Here's whats going on with functions and Typescript
+
+* **Type Annotation** - Code we add to tell Typescript what type of arguments a function will receive and what type of values it will return
+
+* **Type Inference** - Typescript will to figure out what type of value a function will return.
+
+> The big difference here is we are no longer annotating a variable declaration, instead we are annotating the function itself.
+
+I know this sends our brain on a spin. so lets jump back into code and undertsnad it better. ``

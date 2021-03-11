@@ -59,7 +59,7 @@ const logNumber = (i) => {
 
 /* Annotating function basically meants we are telling Typescript what vales the function takes and what vales it returns along with type */
 
-const logNumberts: (i: number) => void = (i) => {
+const logNumbers: (i: number) => void = (i) => {
   console.log(i);
 };
 
