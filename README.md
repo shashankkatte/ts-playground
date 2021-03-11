@@ -225,3 +225,4 @@ So `any` type is
 > **Avoid Variables with `any` at all costs. Its generally a bad thing b'coz Typescript cant do its job of helping you**
 
 > checkout examples on when to use typeannotations at the bottom section of `02_ts_features/01_variables.ts`
+

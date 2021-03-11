@@ -71,7 +71,7 @@ const logNumberts: (i: number) => void = (i) => {
 /******************************************/
 
 //  so then when do we use annotations?
-// 1. Function that returns the 'any' type
+// Scenario 1. Function that returns the 'any' type
 
 const json = '{"x": 10, "y":20}';
 const coordinates = JSON.parse(json);
@@ -89,7 +89,41 @@ console.log(coordinates1); // {x:10, y:20}
 
 //  now if you mouse over you'll see the proper type annotation on corordinates1
 
+// Scenario 2. When we declare variable on one line and initialize on another
+// Lets look at this example
+let words = ['red', 'green', 'blue'];
 
-//  2. When we declare variable on one line and initialize on another
+// Now foundworld will be of type Any as it is only declared but not initialized here, its assigned at a later stage in for loop. // If you hover over it it will tell you : Variable 'foundworld' implicitly has an 'any' type, but a better type may be inferred from usage.ts(7043)
+let foundWord;
 
+for (let i = 0; i < words.length; i++) {
+  if (words[i] === 'green') {
+    foundWord = true;
+  }
+}
 
+// To get around this you can add the annotation : boolean, but a better way of doing this is initializing foundWord (foundWord1) at the time of declaration with a default value.
+
+let foundWord1 = false; // Typescript type inference works now
+
+for (let i = 0; i < words.length; i++) {
+  if (words[i] === 'green') {
+    foundWord1 = true;
+  }
+}
+
+// Scenario 3. When we want the variable to have a  type that can't be inferred correctly
+
+// Following is bad code! dont code like this! This is only to demonstarate the scenario... You have been warned!
+
+// We try to assign two different types to a same variable
+let numbers = [-10, -3, -23];
+
+// if number > 0 assign it else assign false
+let numberAboveZero: boolean | number = false;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
