@@ -101,9 +101,9 @@ If we imagine a variable as a bucket and it has a string inside it say "blue". H
 
 Either you'd say
 
-* Its a string
+- Its a string
 
-* OR we can say - It is a value that has all the properties and methods that we assume that a string has.
+- OR we can say - It is a value that has all the properties and methods that we assume that a string has.
 
 So instead, as a short cut so humans undertand. We just say... **It's a string**.
 
@@ -115,15 +115,15 @@ So Type in Typescript is nothing but a short cut, a label or nomenclature of sor
 
 ### Some basic Types in typeScript
 
-* **string** - "hi there"
+- **string** - "hi there"
 
-* **number** - 0.2 0r -20 or 40000
+- **number** - 0.2 0r -20 or 40000
 
-* **boolean** - true false
+- **boolean** - true false
 
-* **Date** - new Date()
+- **Date** - new Date()
 
-* **custom type** - employee {id:1, name:"john", title:"developer"}
+- **custom type** - employee {id:1, name:"john", title:"developer"}
 
 ### Categories of types
 
@@ -143,7 +143,7 @@ So Type in Typescript is nothing but a short cut, a label or nomenclature of sor
 
 ### So where do we use types?
 
-***EVERYWHERE**, well thats the simple answer. You like it or not you will be surrounded by types. every value has a type associated with it.
+**\*EVERYWHERE**, well thats the simple answer. You like it or not you will be surrounded by types. every value has a type associated with it.
 
 ## Type Annotations and Type Inference
 
@@ -165,7 +165,7 @@ But, the interesting thing here is they both are kind of at odds with each other
 
 We annotate the type of a variable using `:` followed by the type name.
 
-Let's look at annotation for basic and object types. Refer to the code snippets and examples  at `02_ts_features/01_variables.ts`
+Let's look at annotation for basic and object types. Refer to the code snippets and examples at `02_ts_features/01_variables.ts`
 
 But do we need to annotateevery variable? Read on to Type Inference to find out...
 
@@ -200,9 +200,9 @@ If you hover over color after initialization it would say type as `any`. (We wil
 
 ### So then when should we use what?
 
-* **Type Inference** : ALWAYS! When ever we can we use type infrerence by default. We will let Typescript figure out the type for us as much as possible
+- **Type Inference** : ALWAYS! When ever we can we use type infrerence by default. We will let Typescript figure out the type for us as much as possible
 
-* **Type Annotations** - There are 3 Scenarios where we might have to add annotations to help Typescript find the type
+- **Type Annotations** - There are 3 Scenarios where we might have to add annotations to help Typescript find the type
 
   1. Whenever a function returns a `any` type and we need to clarify the value
 
@@ -240,10 +240,43 @@ However we looked at the annotation for the function variable, The left side of 
 
 Here's whats going on with functions and Typescript
 
-* **Type Annotation** - Code we add to tell Typescript what type of arguments a function will receive and what type of values it will return
+- **Type Annotation** - Code we add to tell Typescript what type of arguments a function will receive and what type of values it will return
 
-* **Type Inference** - Typescript will to figure out what type of value a function will return.
+- **Type Inference** - Typescript will to figure out what type of value a function will return.
 
 > The big difference here is we are no longer annotating a variable declaration, instead we are annotating the function itself.
 
 I know this sends our brain on a spin. so lets jump back into code and undertsnad it better. `02_ts_features/03-functions.ts`
+
+### Destructuring and Annotations
+
+Lets look at an example where we have an object that describes todats weather
+
+```Javascript
+const todaysWeather = {
+date: new Date(),
+weather: 'sunny'
+};
+```
+
+and we have a function that logs out weather
+
+```Javascript
+const logWeather = (forecast: {date:Date, weather: string}): void => {
+  console.log(forecast.date);
+  console.log(forecast.weather);
+};
+
+logWeather(todaysWeather);
+```
+
+Now if we use the modern Javascript syntax to destructure the forecast object and pull the properties, we will have the type annotations like this where we just replace the varial with the actual destructuring statement.
+
+```Javascript
+const logWeather = ({date, weather}: {date:Date, weather: string}): void => {
+  console.log(date);
+  console.log(weather);
+};
+```
+
+Note here that the destructuring and the annotations are still seperate, seperated by the `:`
