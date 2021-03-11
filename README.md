@@ -299,3 +299,16 @@ _We can technically have different types in an array, we will look at it in a bi
 
 Lets head back into code and explore more `02_ts_features/05-arrays.ts`
 
+### Why do we need Typed Arrays?
+
+TypeScript can help us in different ways with typed Arrays
+
+1. TypeScript can do Type inference when extracting values from an array
+
+2. It can prevent us from adding incompatible values to the array
+
+3. We can get help with `map`, `foreach`, `reduce` functions
+
+4. Flexible arrays can still contain multiple different types.
+
+Time to head back into code and explore more `02_ts_features/05-arrays.ts`
