@@ -297,3 +297,5 @@ In Typescript we generally have similar kind of values in an array. Like an arra
 
 _We can technically have different types in an array, we will look at it in a bit._ 
 
+Lets head back into code and explore more `02_ts_features/05-arrays.ts`
+
