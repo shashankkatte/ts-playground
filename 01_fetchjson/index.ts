@@ -7,7 +7,7 @@ import axios from 'axios';
 
 const url = 'https://jsonplaceholder.typicode.com/todos/1';
 
-//  Intefaces help define structure of objects in Typescript
+//  Intefaces help define structure of objects in TypeScript
 interface Todo {
   id: number;
   title: string;
@@ -29,7 +29,7 @@ axios.get(url).then((response) => {
   const title = todo.title;
   const completed = todo.completed;
 
-  logTodo(id, title, completed)
+  logTodo(id, title, completed);
 });
 
 const logTodo = (id: number, title: string, completed: boolean) => {

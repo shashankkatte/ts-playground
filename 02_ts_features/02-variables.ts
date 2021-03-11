@@ -1,8 +1,8 @@
 /* Here's a variable declaration that has a type annotation. Here : and the word after it (number) is the type annotation
 let apples: number = 5; */
 
-/* This syntax is pretty common in majority of Typescript projects you might work with
- Here we are telling Typescript that we will only assign values of type number to variable apples.
+/* This syntax is pretty common in majority of TypeScript projects you might work with
+ Here we are telling TypeScript that we will only assign values of type number to variable apples.
 If we ever assign something else... show us an error. */
 
 // Now if you try and assign true it will yell at you
@@ -12,7 +12,7 @@ apples = true;
 let speed: string = 'fast';
 let hasName: boolean = true;
 
-/* here's interesting. Here the type and value are of same name. It's not uncommon to see such code in typescript. I know its wierd to wrap your head around but you'll be OK as we learn more */
+/* here's interesting. Here the type and value are of same name. It's not uncommon to see such code in TypeScript. I know its wierd to wrap your head around but you'll be OK as we learn more */
 
 let wierdStuff: null = null;
 
@@ -25,7 +25,7 @@ let now: Date = new Date();
 //  Array, here colors is a type of array of strings
 let colors: string[] = ['red', 'green', 'blue'];
 
-/* one of the confusing sytaxes in Typescript to get used to is, when we are actually declaring an array and when we are just indicating a type of array. Practice makes it easy. */
+/* one of the confusing sytaxes in TypeScript to get used to is, when we are actually declaring an array and when we are just indicating a type of array. Practice makes it easy. */
 
 //  likewise this is an exaple where luckyNumbers is of type : array of numbers
 let luckyNumbers: number[] = [1, 3, 13, 39, 99];
@@ -57,7 +57,7 @@ const logNumber = (i) => {
   console.log(i);
 };
 
-/* Annotating function basically meants we are telling Typescript what vales the function takes and what vales it returns along with type */
+/* Annotating function basically meants we are telling TypeScript what vales the function takes and what vales it returns along with type */
 
 const logNumbers: (i: number) => void = (i) => {
   console.log(i);
@@ -104,7 +104,7 @@ for (let i = 0; i < words.length; i++) {
 
 // To get around this you can add the annotation : boolean, but a better way of doing this is initializing foundWord (foundWord1) at the time of declaration with a default value.
 
-let foundWord1 = false; // Typescript type inference works now
+let foundWord1 = false; // TypeScript type inference works now
 
 for (let i = 0; i < words.length; i++) {
   if (words[i] === 'green') {
