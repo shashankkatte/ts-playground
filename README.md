@@ -383,3 +383,13 @@ const carSpecs = {
 Now doesnt this make better sense? the object format forces us to put in a key thus making the code more readable.
 
 > In real life you'll see that when ever we need to model some informative data we reach out to object more than tuple. Its all about making the code more readable and in turn making our lives easier.
+
+## Interfaces in TypeScript
+
+This is one of the most imporant concept/ feature to grasp in typescript. Understanding Interfaces really well will help you design excellent applications.
+
+> Interfaces + Classes = Strong code reuse with TypeScript
+
+When we create an interface, we are creating a new type that describes the property names and value types of an object. It is a custom type that we define
+
+Understanding Interfaces is a lot easier with code, so lets jump back into code at `02_ts_features/07-interfaces.ts`
