@@ -392,4 +392,22 @@ This is one of the most imporant concept/ feature to grasp in typescript. Unders
 
 When we create an interface, we are creating a new type that describes the property names and value types of an object. It is a custom type that we define
 
+### An Analogy to understand Interfaces
+
+Conceptually, think of interfaces as being a contract or a design agreement.
+
+Imagine you are Car maker that makes cars which run on gas and also electric cars.
+
+Now the motor in the cars are very different for Gas and electric cars.
+
+However when a driver gets in the car, they find the save steering wheel the same gas pedal, the same brakes.
+
+Here, you can imagine that the gas pedal, brake pedal and the steeing wheels implement a standard or a common "Interface" that makes it easier for drivers to drive any of these cars in the same manner.
+
+It doesnt matter how the motor, gas pedal and brake pedal works internally... Gas motor or eectric motor, normal steering or power steering, drum brakes or disc brakes.
+
+For the driver, if you turn the steering car turns, press the gas pedal car moves, hit the brake it stops! doesnt marter which type of car you drive.
+
+### Intefaces in Action
+
 Understanding Interfaces is a lot easier with code, so lets jump back into code at `02_ts_features/07-interfaces.ts`
