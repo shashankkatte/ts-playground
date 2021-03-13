@@ -55,12 +55,36 @@ printVehicleBetter(oldHondaCivic);
 // It is very important to have the same property names and the Types as defined in the interface.
 // This OCD strictness will save you from lots and lots of bugs while developing large applications.
 
-
 //  Lets explore more about interfaces now
 //  You are not just limited to primitive data types you can use complex datatypes as well like you can change Year from string to a Date Type
 
 interface Vehicle1 {
-    name: string;
-    year: Date;
-    broken: boolean;
-  }
+  name: string;
+  year: Date;
+  broken: boolean;
+}
+
+// You can also have functions in Interfaces
+// To add a function to interfaces you add the function name followed by ():return type
+//  Here Vehicle2 has a function called summary that expects to return a string type
+
+interface Vehicle2 {
+  name: string;
+  year: Date;
+  broken: boolean;
+  summary(): string;
+}
+
+//  Now The object OldHondaCivic has to implement summary function to be considered of type Vehicle2 or else TypeScript will complain again
+
+const oldHondaCivic2 = {
+    name: 'civic',
+    year: 2000,
+    broken: true,
+    summary(): string {
+        return "Get a new car now!"
+    }
+  };
+
+  printVehicleBetter(oldHondaCivic2);
+
