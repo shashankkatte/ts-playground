@@ -1,5 +1,7 @@
 # TypeScript Playground
 
+[![HitCount](http://hits.dwyl.com/shashankkatte/ts-playground.svg)](http://hits.dwyl.com/shashankkatte/ts-playground)
+
 A collection of TypeScript Apps, code snippets and exercises for anyone to understand TypeScript and associated design patterns.
 
 ## What is TypeScript?
