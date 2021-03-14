@@ -34,3 +34,27 @@ vehicle.drive();
 vehicle.honk();
 
 //  Now if yoy run it with ts-node you will see both 'speed is good' and 'beep beep'
+
+//  Now lets talk a bit about inhereitence, lets create a class called Car. Think about how Vehicle and car are related in real world
+//  We could say that Car is a type of Vehicle?
+//  so what ever a car could do a vehicle should be able to do as well.
+//  So we would want class Car to have all the methods same as Vehicle
+//  To achieve this Car class can extend the Vehicle class
+
+class Car extends Vehicle {
+  drive(): void {
+    console.log('Vrooom!');
+  }
+}
+
+//  Now if we create an istance of Car class we can still call the drive and honk methods
+
+const bmw = new Car();
+
+bmw.drive();
+bmw.honk();
+
+//  when we extend a class from another class we have the option to override methods.
+//  Lets say in our case we want Car class to have a different implementation of drive method
+
+//  To do so we can go back and simply redefine the drive method inside of Car class
