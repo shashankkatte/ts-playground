@@ -86,5 +86,13 @@ const oldHondaCivic2 = {
     }
   };
 
-  printVehicleBetter(oldHondaCivic2);
+  const printVehicleBetter2 = (vehicle: Vehicle2): void => {
+        console.log(vehicle.summary());
+  }
 
+// Here's another thing to consider. 
+// oldHondaCivic2 to can have its own properties which are not defined in the Vehicle2 interface
+//  To be considered a Type of Vehicle2 OldHondaCivic2 should have the ATLEAST the same properties and functions!
+
+
+//  Alright! lets get back to README.md at this point

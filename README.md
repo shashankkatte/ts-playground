@@ -411,3 +411,31 @@ For the driver, if you turn the steering car turns, press the gas pedal car move
 ### Intefaces in Action
 
 Understanding Interfaces is a lot easier with code, so lets jump back into code at `02_ts_features/07-interfaces.ts`
+
+### Interface and code reuse
+
+General strategy for reusable code in TypeScript (Mostly if not always)
+
+1. Create functions that accept arguments that are typed with interfaces
+
+2. Objects/classes can decide to 'implement' a given interface to work with a fuction
+
+Interfaces are used as _gatekeepers_. If certain object likes to access some functionality it has to impliment the interface.
+
+Imagine this real world scenario: Its a cold winter morning and its also raining outside.
+
+You have two woolen jackets a red one that keeps you warm but is not water proof. It easily gets wets in the rain.
+
+You also have a Blue woolen jacket that gets wet in the rain too, but it came with an additional Yellow rain overcoat. 
+
+So to stay toasty and dry you use the blue woolen jacket with the yellow rain overcoat over it.
+
+Lets break it down:
+
+- Both the red and blue woolen jackets are the objects.
+
+- Yellow rain jacket is like an interface
+
+- In order to provide you the _funtionality of rain protection_ the blue jacket _implements the yellow rain overcoat_
+
+- If the red jacket also had to provide you the funtionality of protection from rain. it has to impliment the interface - Yello rain overcoat. i.e You have to wear the yello rain over coat.
