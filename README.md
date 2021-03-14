@@ -439,3 +439,14 @@ Lets break it down:
 - In order to provide you the _funtionality of rain protection_ the blue jacket _implements the yellow rain overcoat_
 
 - If the red jacket also had to provide you the funtionality of protection from rain. it has to impliment the interface - Yello rain overcoat. i.e You have to wear the yello rain over coat.
+
+## Classes in TypeScript
+
+A class is a blueprint of sorts to create objects with fields(variables) and methods(functions) to represent a thing.
+
+Think of Classes as cookie cutter and objects as actual cookie. Or think of classes as stensils to draw shapes and objects as actual shapes drawn.
+
+### Working with classes
+
+Lets jump back into code and discover how classes work in TypeScript. `02_ts_features/08-classes.ts`
+
