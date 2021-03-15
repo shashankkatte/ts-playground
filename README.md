@@ -2,9 +2,44 @@
 
 Opensource and free resource to learn and practice **TypeScript** skills.  :rocket:
 
-## :scroll: Table of contents
+## 📜 Table of Contents
+=================
 
-coming soon...
+   * [TypeScript Playground](#typescript-playground)
+      * [What is TypeScript?](#sparkling_heart-what-is-typescript)
+      * [How TypeScript helps?](#raised_hands-how-typescript-helps)
+      * [How do we run our code with type script?](#how-do-we-run-our-code-with-type-script)
+      * [Getting TypeScript - Environment setup](#computer-getting-typescript---environment-setup)
+      * [Executing TypeScript code](#gear-executing-typescript-code)
+      * [A quick look at How TypeScript helps with Interfaces and Annotations](#eyeglasses-a-quick-look-at-how-typescript-helps-with-interfaces-and-annotations)
+      * [Types in TypeScript](#sparkles-types-in-typescript)
+         * [Some basic Types in TypeScript](#some-basic-types-in-typescript)
+         * [Categories of types](#categories-of-types)
+         * [Why do we care about Types at all?](#why-do-we-care-about-types-at-all)
+         * [Code examples on Types](#code-examples-on-types)
+         * [So where do we use types?](#so-where-do-we-use-types)
+      * [Type Annotations and Type Inference](#type-annotations-and-type-inference)
+         * [What is type Annotation and Type Inference?](#what-is-type-annotation-and-type-inference)
+         * [Understanding Type annotations](#dizzy-understanding-type-annotations)
+         * [Understanding Type Inference](#mag_right-understanding-type-inference)
+         * [So then when should we use what?](#so-then-when-should-we-use-what)
+         * [What the hell is any type?](#japanese_goblin-what-the-hell-is-any-type)
+         * [Functions in TypeScript](#hammer-functions-in-typescript)
+         * [Destructuring and Annotations](#collision-destructuring-and-annotations)
+         * [Annotating around Objects](#alien-annotating-around-objects)
+      * [Arrays in TypeScript](#books-arrays-in-typescript)
+         * [Why do we need Typed Arrays?](#why-do-we-need-typed-arrays)
+         * [When to use Typed Arrays?](#question-when-to-use-typed-arrays)
+      * [Tuples in TypeScript](#speak_no_evil-tuples-in-typescript)
+         * [Tuples in action](#monkey-tuples-in-action)
+         * [Tuple - why do we care and when to use them?](#tuple---why-do-we-care-and-when-to-use-them)
+      * [Interfaces in TypeScript](#electric_plug-interfaces-in-typescript)
+         * [An Analogy to understand Interfaces](#point_up-an-analogy-to-understand-interfaces)
+         * [Intefaces in Action](#zap-intefaces-in-action)
+         * [Interface and code reuse](#recycle-interface-and-code-reuse)
+      * [Classes in TypeScript](#triangular_ruler-classes-in-typescript)
+         * [Working with classes](#construction_worker-working-with-classes)
+         * [Class - Modifiers in TypeScript](#paperclip-class---modifiers-in-typescript)
 
 ## :sparkling_heart: What is TypeScript?
 
