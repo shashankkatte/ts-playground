@@ -328,7 +328,7 @@ So `any` type is
 
 2. Means TypeScript has no idea what this is and cant check for correct property references.
 
-> :no_entry_sign: **Avoid Variables with `any` at all costs. Its generally a bad thing b'coz TypeScript cant do its job of helping you!**
+:no_entry_sign: **Avoid Variables with `any` at all costs. Its generally a bad thing b'coz TypeScript cant do its job of helping you!**
 
 > checkout examples on when to use typeannotations at the bottom section of [`02_ts_features/02-variables.ts`](./02_ts_features/02-variables.ts)
 
