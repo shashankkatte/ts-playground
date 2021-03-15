@@ -51,6 +51,8 @@ With TypeScript, We are adding some additional syntax to our JavaScript code or 
 
 > TypeScript is like a friend sitting behind you while coding, helping you catch errors while you code. :ok_woman:
 
+[Back to Top](#typescript-playground)
+
 ## :raised_hands: How TypeScript helps?
 
 1. :point_right: Helps us catch errors during development
