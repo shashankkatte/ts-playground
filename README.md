@@ -3,7 +3,7 @@
 Opensource and free resource to learn and practice **TypeScript** skills.  :rocket:
 
 ## 📜 Table of Contents
-=================
+
 
    * [TypeScript Playground](#typescript-playground)
       * [What is TypeScript?](#sparkling_heart-what-is-typescript)
