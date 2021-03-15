@@ -6,7 +6,7 @@ Opensource and free resource to learn and practice **TypeScript** skills.  :rock
 
 coming soon...
 
-## What is TypeScript?
+## :sparkling_heart: What is TypeScript?
 
 > TypeScript = JavaScript + A Type system
 
@@ -16,7 +16,7 @@ With TypeScript, We are adding some additional syntax to our JavaScript code or 
 
 > TypeScript is like a friend sitting behind you while coding, helping you catch errors while you code. :ok_woman:
 
-## How TypeScript helps?
+## :raised_hands: How TypeScript helps?
 
 1. :point_right: Helps us catch errors during development
 2. :point_right: Uses type annotations to analyse our code
