@@ -2,15 +2,32 @@
 
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-welcome-success.svg?style=flat-square)](./CONTRIBUTING.md)
 [![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://www.firsttimersonly.com/)
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Contribute%20To%20This%20Project.%20An%20Open-Source%20project%20to%20learn%20TypeScript.%20By%20@shashankkatte&url=https://github.com/shashankkatte/ts-playgroundt&hashtags=100DaysofCode 'Tweet this project')
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Contribute%20To%20This%20Project.%20An%20Open-Source%20project%20to%20learn%20TypeScript.%20By%20@shashankkatte&url=https://github.com/shashankkatte/ts-playground&hashtags=100DaysofCode 'Tweet this project')
 
 ![TS Playground](img/TypeScriptPlayground.png)
 
-Opensource and free resource to learn and practice **TypeScript** skills. :rocket:
+## Overview
+
+TypeScript playground is Opensource and free resource to learn and practice **TypeScript** skills. :rocket:. This learning resource combines markdown tutorials and actual source files with comments to help you learn and refresh TypeScript.
+
+You get to learn and practice, debug TypeScript right in your code editor.
+
+Clone the repo
+
+`git clone git@github.com:shashankkatte/ts-playground.git`
+
+- If you are a beginner start with the tutorial [here](#sparkling_heart-tutorial---what-is-typescript)
+
+- Want to jump into sample Apps? check them [here](#roller_coaster-sample-applications)
+
+- Learn how to comtribute to this repo [here](./CONTRIBUTING.md)
+
+Happy Hacking!::+1:
 
 ## 📜 Table of Contents
 
 - [TypeScript Playground](#typescript-playground)
+  - [Overview](#Overview)
   - [Sample Applications](#roller_coaster-sample-applications)
   - [Tutorial Introduction - What is TypeScript?](#sparkling_heart-tutorial---what-is-typescript)
   - [How TypeScript helps?](#raised_hands-how-typescript-helps)
@@ -56,11 +73,11 @@ If you are a beginner / need a refresher on basic conceps on TypeScript [Start h
 
 [Back to Top](#typescript-playground)
 
-## :sparkling_heart: Tutorial - What is TypeScript?
+## :sparkling_heart:  What is TypeScript?
+
+With TypeScript, We are adding some additional syntax to our JavaScript code or the type system. Think of it as flexibility of JavaScript with strict type system as in other languages like C# or Java.
 
 > TypeScript = JavaScript + A Type system
-
-With TypeScript, We are adding some additional syntax to our JavaScript code or the type system. Think of it as flexibility of JavaScript with strict type system as in languages like C# or Java.
 
 :warning: TypeScript has no effect on how the code gets executed by browser or Node.
 
