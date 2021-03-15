@@ -4,9 +4,9 @@ Opensource and free resource to learn and practice **TypeScript** skills.  :rock
 
 ## 📜 Table of Contents
 
-
    * [TypeScript Playground](#typescript-playground)
-      * [What is TypeScript?](#sparkling_heart-what-is-typescript)
+      * [Sample Applications](#roller_coaster-sample-applications)
+      * [Tutorial Introduction - What is TypeScript?](#sparkling_heart-tutorial---what-is-typescript)
       * [How TypeScript helps?](#raised_hands-how-typescript-helps)
       * [How do we run our code with type script?](#how-do-we-run-our-code-with-type-script)
       * [Getting TypeScript - Environment setup](#computer-getting-typescript---environment-setup)
@@ -40,6 +40,7 @@ Opensource and free resource to learn and practice **TypeScript** skills.  :rock
       * [Classes in TypeScript](#triangular_ruler-classes-in-typescript)
          * [Working with classes](#construction_worker-working-with-classes)
          * [Class - Modifiers in TypeScript](#paperclip-class---modifiers-in-typescript)
+      * [Credits and Acknowledgements](#pray-credits-and-acknowledgements)
 
 ## :roller_coaster: Sample Applications
 
