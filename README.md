@@ -41,7 +41,15 @@ Opensource and free resource to learn and practice **TypeScript** skills.  :rock
          * [Working with classes](#construction_worker-working-with-classes)
          * [Class - Modifiers in TypeScript](#paperclip-class---modifiers-in-typescript)
 
-## :sparkling_heart: What is TypeScript?
+## :roller_coaster: Sample Applications
+
+Find all the sample Apps and code snippets implemented with TypeScript here : [`01_sample_apps`](./01_sample_apps)
+
+If you are a beginner / need a refresher on basic conceps on TypeScript [Start here](#sparkling_heart-what-is-typescript)
+
+[Back to Top](#typescript-playground)
+
+## :sparkling_heart: Tutorial - What is TypeScript?
 
 > TypeScript = JavaScript + A Type system
 
@@ -571,3 +579,12 @@ There are 3 types of modifiers available
 > By default every method and property that we create in a class will have public modifier attached to it automatically internally.
 
 [Back to Top](#typescript-playground)
+
+## :pray: Credits and Acknowledgements
+
+All the content and code samples have been collated from multiple, publicly available resources on TypeScript and from Open source collaborators.
+
+Special thanks and mention to some great online instructors : [Brad Travesy](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) | [maximilian schwarzmüller](https://academind.com/) | [Stephen Grider](https://twitter.com/ste_grider?lang=en) and many many more...
+
+[Back to Top](#typescript-playground)
+
