@@ -1,46 +1,52 @@
 # TypeScript Playground
 
-Opensource and free resource to learn and practice **TypeScript** skills.  :rocket:
+[![Contributions Welcome](https://img.shields.io/badge/Contributions-welcome-success.svg?style=flat-square)](./CONTRIBUTING.md)
+[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://www.firsttimersonly.com/)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Contribute%20To%20This%20Project.%20An%20Open-Source%20project%20to%20learn%20TypeScript.%20By%20@shashankkatte&url=https://github.com/shashankkatte/ts-playgroundt&hashtags=100DaysofCode 'Tweet this project')
+
+![TS Playground](./img/TypeScript Playground.png)
+
+Opensource and free resource to learn and practice **TypeScript** skills. :rocket:
 
 ## 📜 Table of Contents
 
-   * [TypeScript Playground](#typescript-playground)
-      * [Sample Applications](#roller_coaster-sample-applications)
-      * [Tutorial Introduction - What is TypeScript?](#sparkling_heart-tutorial---what-is-typescript)
-      * [How TypeScript helps?](#raised_hands-how-typescript-helps)
-      * [How do we run our code with type script?](#how-do-we-run-our-code-with-type-script)
-      * [Getting TypeScript - Environment setup](#computer-getting-typescript---environment-setup)
-      * [Executing TypeScript code](#gear-executing-typescript-code)
-      * [A quick look at How TypeScript helps with Interfaces and Annotations](#eyeglasses-a-quick-look-at-how-typescript-helps-with-interfaces-and-annotations)
-      * [Types in TypeScript](#sparkles-types-in-typescript)
-         * [Some basic Types in TypeScript](#some-basic-types-in-typescript)
-         * [Categories of types](#categories-of-types)
-         * [Why do we care about Types at all?](#why-do-we-care-about-types-at-all)
-         * [Code examples on Types](#code-examples-on-types)
-         * [So where do we use types?](#so-where-do-we-use-types)
-      * [Type Annotations and Type Inference](#type-annotations-and-type-inference)
-         * [What is type Annotation and Type Inference?](#what-is-type-annotation-and-type-inference)
-         * [Understanding Type annotations](#dizzy-understanding-type-annotations)
-         * [Understanding Type Inference](#mag_right-understanding-type-inference)
-         * [So then when should we use what?](#so-then-when-should-we-use-what)
-         * [What the hell is any type?](#japanese_goblin-what-the-hell-is-any-type)
-         * [Functions in TypeScript](#hammer-functions-in-typescript)
-         * [Destructuring and Annotations](#collision-destructuring-and-annotations)
-         * [Annotating around Objects](#alien-annotating-around-objects)
-      * [Arrays in TypeScript](#books-arrays-in-typescript)
-         * [Why do we need Typed Arrays?](#why-do-we-need-typed-arrays)
-         * [When to use Typed Arrays?](#question-when-to-use-typed-arrays)
-      * [Tuples in TypeScript](#speak_no_evil-tuples-in-typescript)
-         * [Tuples in action](#monkey-tuples-in-action)
-         * [Tuple - why do we care and when to use them?](#tuple---why-do-we-care-and-when-to-use-them)
-      * [Interfaces in TypeScript](#electric_plug-interfaces-in-typescript)
-         * [An Analogy to understand Interfaces](#point_up-an-analogy-to-understand-interfaces)
-         * [Intefaces in Action](#zap-intefaces-in-action)
-         * [Interface and code reuse](#recycle-interface-and-code-reuse)
-      * [Classes in TypeScript](#triangular_ruler-classes-in-typescript)
-         * [Working with classes](#construction_worker-working-with-classes)
-         * [Class - Modifiers in TypeScript](#paperclip-class---modifiers-in-typescript)
-      * [Credits and Acknowledgements](#pray-credits-and-acknowledgements)
+- [TypeScript Playground](#typescript-playground)
+  - [Sample Applications](#roller_coaster-sample-applications)
+  - [Tutorial Introduction - What is TypeScript?](#sparkling_heart-tutorial---what-is-typescript)
+  - [How TypeScript helps?](#raised_hands-how-typescript-helps)
+  - [How do we run our code with type script?](#how-do-we-run-our-code-with-type-script)
+  - [Getting TypeScript - Environment setup](#computer-getting-typescript---environment-setup)
+  - [Executing TypeScript code](#gear-executing-typescript-code)
+  - [A quick look at How TypeScript helps with Interfaces and Annotations](#eyeglasses-a-quick-look-at-how-typescript-helps-with-interfaces-and-annotations)
+  - [Types in TypeScript](#sparkles-types-in-typescript)
+    - [Some basic Types in TypeScript](#some-basic-types-in-typescript)
+    - [Categories of types](#categories-of-types)
+    - [Why do we care about Types at all?](#why-do-we-care-about-types-at-all)
+    - [Code examples on Types](#code-examples-on-types)
+    - [So where do we use types?](#so-where-do-we-use-types)
+  - [Type Annotations and Type Inference](#type-annotations-and-type-inference)
+    - [What is type Annotation and Type Inference?](#what-is-type-annotation-and-type-inference)
+    - [Understanding Type annotations](#dizzy-understanding-type-annotations)
+    - [Understanding Type Inference](#mag_right-understanding-type-inference)
+    - [So then when should we use what?](#so-then-when-should-we-use-what)
+    - [What the hell is any type?](#japanese_goblin-what-the-hell-is-any-type)
+    - [Functions in TypeScript](#hammer-functions-in-typescript)
+    - [Destructuring and Annotations](#collision-destructuring-and-annotations)
+    - [Annotating around Objects](#alien-annotating-around-objects)
+  - [Arrays in TypeScript](#books-arrays-in-typescript)
+    - [Why do we need Typed Arrays?](#why-do-we-need-typed-arrays)
+    - [When to use Typed Arrays?](#question-when-to-use-typed-arrays)
+  - [Tuples in TypeScript](#speak_no_evil-tuples-in-typescript)
+    - [Tuples in action](#monkey-tuples-in-action)
+    - [Tuple - why do we care and when to use them?](#tuple---why-do-we-care-and-when-to-use-them)
+  - [Interfaces in TypeScript](#electric_plug-interfaces-in-typescript)
+    - [An Analogy to understand Interfaces](#point_up-an-analogy-to-understand-interfaces)
+    - [Intefaces in Action](#zap-intefaces-in-action)
+    - [Interface and code reuse](#recycle-interface-and-code-reuse)
+  - [Classes in TypeScript](#triangular_ruler-classes-in-typescript)
+    - [Working with classes](#construction_worker-working-with-classes)
+    - [Class - Modifiers in TypeScript](#paperclip-class---modifiers-in-typescript)
+  - [Credits and Acknowledgements](#pray-credits-and-acknowledgements)
 
 ## :roller_coaster: Sample Applications
 
@@ -144,7 +150,7 @@ const logTodo = (id: number, title: string, completed: boolean) => {
 ```
 
 > Refer to [`01_sample_apps/01_fetchjson/index.ts`](./01_sample_apps/01_fetchjson/index.ts)
- for a complete working exercise.
+> for a complete working exercise.
 
 Great now that we have a taste of TypeScript lets dig deeper from the basics.
 
@@ -173,8 +179,8 @@ Sometimes these types are pretty obvious like strings, but in real world of prog
 So Type in TypeScript is nothing but a short cut, a label or nomenclature of sorts to help us describe what kind of value it is and what can it do.
 
 > Every single value in TypeScript has a Type
-> 
-[Back to Top](#typescript-playground)
+>
+> [Back to Top](#typescript-playground)
 
 ### Some basic Types in TypeScript
 
@@ -509,7 +515,7 @@ Here, you can imagine that the gas pedal, brake pedal and the steeing wheels imp
 
 It doesnt matter how the motor, gas pedal and brake pedal works internally... Gas motor or eectric motor, normal steering or power steering, drum brakes or disc brakes.
 
-For the driver, if you turn the steering car turns, press the gas pedal car moves, hit the brake it stops! doesnt marter which type of car you drive. :dash: 
+For the driver, if you turn the steering car turns, press the gas pedal car moves, hit the brake it stops! doesnt marter which type of car you drive. :dash:
 
 [Back to Top](#typescript-playground)
 
@@ -533,7 +539,7 @@ General strategy for reusable code in TypeScript (Mostly if not always)
 
 You have two woolen jackets a red one that keeps you warm but is not water proof. It easily gets wets in the rain.
 
-You also have a Blue woolen jacket that gets wet in the rain too, but it came with an additional Yellow rain overcoat. 
+You also have a Blue woolen jacket that gets wet in the rain too, but it came with an additional Yellow rain overcoat.
 
 So to stay toasty and dry you use the blue woolen jacket with the yellow rain overcoat over it.
 
@@ -588,4 +594,3 @@ All the content and code samples have been collated from multiple, publicly avai
 Special thanks and mention to some great online instructors : [Brad Travesy](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) | [maximilian schwarzmüller](https://academind.com/) | [Stephen Grider](https://twitter.com/ste_grider?lang=en) and many many more...
 
 [Back to Top](#typescript-playground)
-
