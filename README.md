@@ -450,3 +450,19 @@ Think of Classes as cookie cutter and objects as actual cookie. Or think of clas
 
 Lets jump back into code and discover how classes work in TypeScript. `02_ts_features/08-classes.ts`
 
+### Class Method Modifiers in TypeScript
+
+_Modifiers_ are different keywords that we can place in front of different methods and properties/fields in class.They help us control how can when a method or property can be accessed.
+
+> The goal of the modifiers is to restrict access to diffent functions and variables.
+
+There are 3 types of modifiers available
+
+- **Public** : This method/property can be called anywhere at anytime
+
+- **Private** : This method/property can only be called by other methods in this class.
+
+- **Protected** : This method/property can be called by other methods in this class or by other methods in child classes.
+
+> By default every method and property that we create in a class will have public modifier attached to it automatically internally.
+
