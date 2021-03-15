@@ -4,7 +4,7 @@
 [![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](https://www.firsttimersonly.com/)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Contribute%20To%20This%20Project.%20An%20Open-Source%20project%20to%20learn%20TypeScript.%20By%20@shashankkatte&url=https://github.com/shashankkatte/ts-playgroundt&hashtags=100DaysofCode 'Tweet this project')
 
-![TS Playground](./img/TypeScript Playground.png)
+![TS Playground](img/TypeScriptPlayground.png)
 
 Opensource and free resource to learn and practice **TypeScript** skills. :rocket:
 
