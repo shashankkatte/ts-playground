@@ -60,11 +60,15 @@ With TypeScript, We are adding some additional syntax to our JavaScript code or 
 3. :point_right: Only active during development, the browser or node doesnt understand TypeScript, it is just to make development and debugging life easier.
 4. :point_right: Doesnt provide any performance optimization. It is still our JavaScript that runs in the end.
 
+[Back to Top](#typescript-playground)
+
 ## How do we run our code with type script?
 
 1. Create / write TypeScript code (.ts file extension)
 2. Run it through TypeScript compiler which spits out JavaScript code
 3. Run this javascript code from compiler as usual in browser or node. (Again now browser or node has no idea we used TypeScript)
+
+[Back to Top](#typescript-playground)
 
 ## :computer: Getting TypeScript - Environment setup
 
@@ -81,6 +85,8 @@ check the installation by using the type script compiler command with help tag
 `tsc --help`
 
 If it shows all the documentation of tsc command and its options, then you are all set.
+
+[Back to Top](#typescript-playground)
 
 ## :gear: Executing TypeScript code
 
@@ -99,6 +105,8 @@ This compilation gets tedious pretty soon, w can save one step by using ts node
 `ts-node <filename.ts>`
 
 This command compiles the TS files to JS files and executes the JS file, all in one command.
+
+[Back to Top](#typescript-playground)
 
 ## :eyeglasses: A quick look at How TypeScript helps with Interfaces and Annotations
 
@@ -131,6 +139,8 @@ const logTodo = (id: number, title: string, completed: boolean) => {
 
 Great now that we have a taste of TypeScript lets dig deeper from the basics.
 
+[Back to Top](#typescript-playground)
+
 ## :sparkles: Types in TypeScript
 
 In simple terms, a Type in TypeScript is an easy way to refer to the different properties and functions that a value.
@@ -154,6 +164,8 @@ Sometimes these types are pretty obvious like strings, but in real world of prog
 So Type in TypeScript is nothing but a short cut, a label or nomenclature of sorts to help us describe what kind of value it is and what can it do.
 
 > Every single value in TypeScript has a Type
+> 
+[Back to Top](#typescript-playground)
 
 ### Some basic Types in TypeScript
 
@@ -167,11 +179,15 @@ So Type in TypeScript is nothing but a short cut, a label or nomenclature of sor
 
 - **custom type** - employee {id:1, name:"john", title:"developer"}
 
+[Back to Top](#typescript-playground)
+
 ### Categories of types
 
 1. **Primitive types** - Primitive types are all the basic ones that you might guess eg: number, boolean, void, undefined, string, symbol, null.
 
 2. **Object types** - These are any types that you and I create or any other non-primitive types that are built into the language. E.g: functions, arrays, classes, objects.
+
+[Back to Top](#typescript-playground)
 
 ### Why do we care about Types at all?
 
@@ -179,13 +195,19 @@ So Type in TypeScript is nothing but a short cut, a label or nomenclature of sor
 
 2. :point_right: Types allow other developers to understand what values are flowing around in the codebase. It makes your code more readable, maintainable and collaboration is easy.
 
+[Back to Top](#typescript-playground)
+
 ### Code examples on Types
 
 > Refer to [`02_ts_features/01-types.ts`](./02_ts_features/01-types.ts) for some code snippet examples and inline explanations.
 
+[Back to Top](#typescript-playground)
+
 ### So where do we use types?
 
 :earth_americas: **EVERYWHERE**, well thats the simple answer. You like it or not you will be surrounded by types. every value has a type associated with it.
+
+[Back to Top](#typescript-playground)
 
 ## Type Annotations and Type Inference
 
@@ -205,6 +227,8 @@ But, the interesting thing here is they both are kind of at odds with each other
 
 First lets understand annotations in next section
 
+[Back to Top](#typescript-playground)
+
 ### :dizzy: Understanding Type annotations
 
 We annotate the type of a variable using `:` followed by the type name.
@@ -212,6 +236,8 @@ We annotate the type of a variable using `:` followed by the type name.
 Let's look at annotation for basic and object types. Refer to the code snippets and examples at [`02_ts_features/02-variables.ts`](./02_ts_features/02-variables.ts)
 
 But do we need to annotate every variable? Read on to Type Inference to find out...
+
+[Back to Top](#typescript-playground)
 
 ### :mag_right: Understanding Type Inference
 
@@ -242,6 +268,8 @@ If you hover over color after initialization it would say type as `any`. (We wil
 
 > :thumbsup: Rule of thumb: if we do the declarationa nd initialization in the same line TypeScript will do the TYpe inference for us.
 
+[Back to Top](#typescript-playground)
+
 ### So then when should we use what?
 
 - **Type Inference** : **ALWAYS!** When ever we can we use type infrerence by default. We will let TypeScript figure out the type for us as much as possible
@@ -256,6 +284,8 @@ If you hover over color after initialization it would say type as `any`. (We wil
 
 > checkout examples on when to use typeannotations at the bottom section of [`02_ts_features/02-variables.ts`](./02_ts_features/02-variables.ts)
 
+[Back to Top](#typescript-playground)
+
 ### :japanese_goblin: What the hell is `any` type?
 
 `any` type means that the TypeScript absolutely has no idea what Type a variable or value is! No clue at all!
@@ -269,6 +299,8 @@ So `any` type is
 > :no_entry_sign: **Avoid Variables with `any` at all costs. Its generally a bad thing b'coz TypeScript cant do its job of helping you!**
 
 > checkout examples on when to use typeannotations at the bottom section of [`02_ts_features/02-variables.ts`](./02_ts_features/02-variables.ts)
+
+[Back to Top](#typescript-playground)
 
 ### :hammer: Functions in TypeScript
 
@@ -291,6 +323,8 @@ Here's whats going on with functions and TypeScript
 > :point_right: The big difference here is we are no longer annotating a variable declaration, instead we are annotating the function itself.
 
 I know this sends our brain on a spin :dizzy_face:. so lets jump back into code and undertsnad it better. [`02_ts_features/03-functions.ts`](./02_ts_features/03-functions.ts)
+
+[Back to Top](#typescript-playground)
 
 ### :collision: Destructuring and Annotations
 
@@ -325,6 +359,8 @@ const logWeather = ({date, weather}: {date:Date, weather: string}): void => {
 
 > :pencil2: Note here that the destructuring and the annotations are still seperate, seperated by the `:`
 
+[Back to Top](#typescript-playground)
+
 ### :alien: Annotating around Objects
 
 Annotating Objects is similar to destructuring argument list we saw in pervious section.
@@ -343,6 +379,8 @@ _We can technically have different types in an array, we will look at it in a bi
 
 Lets head back into code and explore more [`02_ts_features/05-arrays.ts`](./02_ts_features/05-arrays.ts)
 
+[Back to Top](#typescript-playground)
+
 ### Why do we need Typed Arrays?
 
 TypeScript can help us in different ways with typed Arrays
@@ -357,9 +395,13 @@ TypeScript can help us in different ways with typed Arrays
 
 Time to head back into code and explore more [`02_ts_features/05-arrays.ts`](./02_ts_features/05-arrays.ts)
 
+[Back to Top](#typescript-playground)
+
 ### :question: When to use Typed Arrays?
 
 We use typed arrays anytime we want to represent a collection of records with some arbitary sord order usually of the same type.
+
+[Back to Top](#typescript-playground)
 
 ## :speak_no_evil: Tuples in TypeScript
 
@@ -395,9 +437,13 @@ If we mess with the order, the structure becomes useless.
 
 > :warning: When we work with tuples we have a fix order of elements
 
+[Back to Top](#typescript-playground)
+
 ### :monkey: Tuples in action
 
 Head into code at [`02_ts_features/06-tuples.ts`](./02_ts_features/06-tuples.ts)
+
+[Back to Top](#typescript-playground)
 
 ### Tuple - why do we care and when to use them?
 
@@ -428,6 +474,8 @@ Now doesnt this make better sense? the object format forces us to put in a key t
 
 > :white_check_mark: In real life you'll see that when ever we need to model some informative data we reach out to object more than tuple. Its all about making the code more readable and in turn making our lives easier.
 
+[Back to Top](#typescript-playground)
+
 ## :electric_plug: Interfaces in TypeScript
 
 This is one of the most imporant concept/ feature to grasp in typescript. Understanding Interfaces really well will help you design excellent applications.
@@ -435,6 +483,8 @@ This is one of the most imporant concept/ feature to grasp in typescript. Unders
 > :heartpulse: Interfaces + Classes = Strong code reuse with TypeScript
 
 When we create an interface, we are creating a new type that describes the property names and value types of an object. It is a custom type that we define
+
+[Back to Top](#typescript-playground)
 
 ### :point_up: An Analogy to understand Interfaces
 
@@ -452,9 +502,13 @@ It doesnt matter how the motor, gas pedal and brake pedal works internally... Ga
 
 For the driver, if you turn the steering car turns, press the gas pedal car moves, hit the brake it stops! doesnt marter which type of car you drive. :dash: 
 
+[Back to Top](#typescript-playground)
+
 ### :zap: Intefaces in Action
 
 Understanding Interfaces is a lot easier with code, so lets jump back into code at [`02_ts_features/07-interfaces.ts`](02_ts_features/07-interfaces.ts)
+
+[Back to Top](#typescript-playground)
 
 ### :recycle: Interface and code reuse
 
@@ -484,15 +538,21 @@ Lets break it down:
 
 - :pushpin: If the red jacket also had to provide you the funtionality of protection from rain. it has to impliment the interface - Yello rain overcoat. i.e You have to wear the yello rain over coat.
 
+[Back to Top](#typescript-playground)
+
 ## :triangular_ruler: Classes in TypeScript
 
 A class is a blueprint of sorts to create objects with fields(variables) and methods(functions) to represent a thing.
 
 Think of Classes as cookie cutter and objects as actual cookie. :cookie: Or think of classes as stensils :triangular_ruler: to draw shapes and objects as actual shapes drawn.:black_medium_small_square:
 
+[Back to Top](#typescript-playground)
+
 ### :construction_worker: Working with classes
 
 Lets jump back into code and discover how classes work in TypeScript. [`02_ts_features/08-classes.ts`](./02_ts_features/08-classes.ts)
+
+[Back to Top](#typescript-playground)
 
 ### :paperclip: Class - Modifiers in TypeScript
 
@@ -509,3 +569,5 @@ There are 3 types of modifiers available
 - **Protected** : This method/property can be called by other methods in this class or by other methods in child classes.
 
 > By default every method and property that we create in a class will have public modifier attached to it automatically internally.
+
+[Back to Top](#typescript-playground)
