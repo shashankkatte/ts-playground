@@ -20,7 +20,7 @@ Clone the repo
 
 - Want to jump into sample Apps? check them [here](#roller_coaster-sample-applications)
 
-- Learn how to comtribute to this repo [here](./CONTRIBUTING.md)
+- Learn how to contribute to this repo [here](./CONTRIBUTING.md)
 
 Happy Hacking!::+1:
 
