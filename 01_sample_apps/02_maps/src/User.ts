@@ -15,6 +15,10 @@ export class User {
       lng: parseFloat(faker.address.longitude()),
     };
   }
+
+  markerContent(): string {
+    return `User name: ${this.name}`;
+  }
 }
 
 //  by convention in TS world you do not use default exports you use {} imports . Third party packages like faker will do!
