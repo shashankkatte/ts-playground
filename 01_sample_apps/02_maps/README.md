@@ -12,3 +12,5 @@ The app randomly generates person and company data from faker.js and plots the p
 
 - Type definition files and @types/faker
 
+- Google Maps : Maps JavaScript API
+
