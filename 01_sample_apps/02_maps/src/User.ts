@@ -1,7 +1,8 @@
 // Import statements in TS look identical to ES2015
 import faker from 'faker';
+import { Mappable } from './CustomMap';
 
-export class User {
+export class User implements Mappable {
   name: string;
   location: {
     lat: number;
