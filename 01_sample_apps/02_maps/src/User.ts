@@ -1,7 +1,7 @@
 // Import statements in TS look identical to ES2015
 import faker from 'faker';
 
-class User {
+export class User {
   name: string;
   location: {
     lat: number;
@@ -16,3 +16,5 @@ class User {
     };
   }
 }
+
+//  by convention in TS world you do not use default exports you use {} imports . Third party packages like faker will do!
