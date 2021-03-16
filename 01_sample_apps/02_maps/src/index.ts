@@ -1,4 +1,4 @@
-// import { User } from './User';
+import { User } from './User';
 // import { Company } from './Company';
 
 // const user = new User();
@@ -9,4 +9,7 @@
 
 import { CustomMap } from './CustomMap';
 
-new CustomMap('map');
+const user = new User();
+const customMap = new CustomMap('map');
+
+customMap.addUserMarker(user);
