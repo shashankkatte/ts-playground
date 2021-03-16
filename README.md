@@ -68,7 +68,7 @@ Happy Hacking!::+1:
 
 Find all the sample Apps and code snippets implemented with TypeScript here : [`01_sample_apps`](./01_sample_apps)
 
-If you are a beginner / need a refresher on basic conceps on TypeScript [Start here](#sparkling_heart-what-is-typescript)
+If you are a beginner / need a refresher on basic conceps on TypeScript [Start here](#sparkling_heart--what-is-typescript)
 
 [Back to Top](#typescript-playground)
 
@@ -600,6 +600,9 @@ There are 3 types of modifiers available
 - **Protected** : This method/property can be called by other methods in this class or by other methods in child classes.
 
 > By default every method and property that we create in a class will have public modifier attached to it automatically internally.
+ 
+
+**The most important concept to grap with TypeScript is the interpay of Interfaces and Classes, the design patterns that pake it so powerful. Have a look at the sample app [`01_sample_apps/02_maps`](./01_sample_apps/02_maps) to understand how they all play together**
 
 [Back to Top](#typescript-playground)
 
@@ -608,5 +611,6 @@ There are 3 types of modifiers available
 All the content and code samples have been collated from multiple, publicly available resources on TypeScript and from Open source collaborators.
 
 Special thanks and mention to some great online instructors : [Brad Travesy](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) | [maximilian schwarzmüller](https://academind.com/) | [Stephen Grider](https://twitter.com/ste_grider?lang=en) and many many more...
+
 
 [Back to Top](#typescript-playground)
