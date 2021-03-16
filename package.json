@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@types/faker": "^5.1.7"
+    "@types/faker": "^5.1.7",
+    "@types/googlemaps": "^3.43.3"
   }
 }
