@@ -1,3 +1,4 @@
+//  By Conention in TS we dont do default exports, we prefer named exports and imports
 import { User } from './User';
 import { Company } from './Company';
 

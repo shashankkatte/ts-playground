@@ -1,5 +1,4 @@
-//  Instructions to every other class on how they can be an argument to addMarker
-
+//  Interface is like an Instructions to every other class on how they can be an argument to addMarker
 export interface Mappable {
   location: {
     lat: number;
@@ -8,6 +7,9 @@ export interface Mappable {
   markerContent(): string;
 }
 
+// We are abstracting The actual google Map class complexity by creating our own custom map class
+// This simplifies and provies only what functionality is needed
+// Helps avoid access to unwanted features and in turn breaking our code
 export class CustomMap {
   private googleMap: google.maps.Map;
 
