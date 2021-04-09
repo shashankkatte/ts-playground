@@ -2,7 +2,7 @@
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
-Please be sure to read the [Code of Conduct](./CONTRIBUTING.md) abide by it and respect fellow contributors :heart:
+Please be sure to read the [Code of Conduct](./CODE_OF_CONDUCT.md) abide by it and respect fellow contributors :heart:
 
 ## What can I contribute?
 
